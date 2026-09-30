@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: #292929;
+    font-size: 45px;
+}
+.navbar {
+    color:aliceblue;
+    overflow: hidden;
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+p{
+    color:#292929;
+    font-size: 17px;
+}
