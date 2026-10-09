@@ -39,3 +39,14 @@ html {
 #blockquote, p {
     font-family: Roboto, sans-serif;
 }
+div.resume {
+  background-color: rgba(228, 226, 226, 0.685);
+  width: 100px;
+  border: 10px solid, lightblue;
+  padding: 50px;
+  margin: 30px;
+  border-radius: 20px;
+}
+div.resume a:hover {
+    color: #292929;
+}
