@@ -1,0 +1,36 @@
+html {
+    font-family: poppins, sans-serif;
+    font-size: 17px;
+}
+header {
+    display: flex;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+.logo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 30px;
+    font-size:25px;
+
+   
+}
+nav ul li {
+    margin: 10px;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav a:hover {
+    color: #9db8e1;
+    text-decoration: underline;
+}
