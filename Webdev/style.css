@@ -63,6 +63,8 @@ ul {
 .headshot {
     width: 300px;
     height: auto;
+    border:10px solid #eefbff;
+    filter:drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))
 }
 .intro p {
     font-size: 30px;
@@ -71,4 +73,11 @@ ul {
 .about-video {
     margin: 20px;
     border-radius: 10px;
+}
+img.cehd {
+    width: 550px;
+    height: auto;
+    border: 10px solid #eefbff;
+    margin: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
