@@ -1,83 +1,134 @@
-h1{
+h1 {
     text-align: left;
     color: #292929;
     font-size: 20px;
 }
-p{
-    color:#292929;
+
+p {
+    color: #292929;
     font-size: 17px;
 }
+
 html {
     font-family: Poppins, sans-serif;
 }
+
 #hero {
     width: 100%;
     height: 100vh;
     background: url('hero.png') no-repeat center / cover;
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-  
+
 }
-#hero h1 { 
+
+#hero h1 {
     font-size: 30px;
 }
-#blockquote, p {
+
+#blockquote,
+p {
     font-family: Roboto, sans-serif;
 }
+
 div.resume {
-  background-color: rgba(228, 226, 226, 0.685);
-  width: 500px;
-  height: 10px;
-  text-align: center;
-  font-size: 30px;
-  border: 10px solid, #eefbff;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 20px;
+    background-color: rgba(228, 226, 226, 0.685);
+    width: 500px;
+    height: 10px;
+    text-align: center;
+    font-size: 30px;
+    border: 10px solid, #eefbff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
 }
+
 div.resume a:hover {
     color: #292929;
 }
+
 ul {
-    list-style-type:disc;
+    list-style-type: disc;
     padding-left: 35px;
-    font-size:17px;
+    font-size: 17px;
     color: #292929;
 }
+
 .about-video {
-   display: block;
-   margin: 30px;
+    display: block;
+    margin: 30px;
 }
+
 .intro {
     display: flex;
     align-items: center;
     gap: 100px;
 }
+
 .headshot {
     width: 300px;
     height: auto;
-    border:10px solid #eefbff;
-    filter:drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))
+    border: 10px solid #eefbff;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))
 }
+
 .intro p {
     font-size: 30px;
     color: #292929;
 }
+
 .about-video {
     margin: 20px;
     border-radius: 10px;
 }
+
 img.cehd {
     width: 550px;
     height: auto;
     border: 10px solid #eefbff;
     margin: 20px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+@media print {
+    @page {
+        margin: 1in;
+    }
+
+    /* hide uwanted elements */
+    .about-page nav,
+    .about-page header,
+    .about-page .headshot,
+    .about-page hr 
+    .about-page .cehd,
+    .about-page .about-video,
+    .about-page .resume,
+    display: none;
+
+}
+
+/* showing wanted content */
+.about-page h1,
+.about-page .intro p,
+.about-page main ul,
+.about-page h2,
+.about-page main section > p,
+.about-page footer {
+    display: block;
+}
+
+/* showing font and color */
+.about-page * {
+    font-family: Poppins, sans-serif;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.3;
 }
