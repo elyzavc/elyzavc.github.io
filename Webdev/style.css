@@ -107,28 +107,29 @@ img.cehd {
     .about-page nav,
     .about-page header,
     .about-page .headshot,
-    .about-page hr 
+    .about-page hr,
     .about-page .cehd,
     .about-page .about-video,
-    .about-page .resume,
-    display: none;
+    .about-page .resume {
+        display: none;
 
-}
+    }
 
-/* showing wanted content */
-.about-page h1,
-.about-page .intro p,
-.about-page main ul,
-.about-page h2,
-.about-page main section > p,
-.about-page footer {
-    display: block;
-}
+    /* showing wanted content */
+    .about-page h1,
+    .about-page .intro p,
+    .about-page main ul,
+    .about-page h2,
+    .about-page main section>p,
+    .about-page footer {
+        display: block;
+    }
 
-/* showing font and color */
-.about-page * {
-    font-family: Poppins, sans-serif;
-    color: black;
-    font-size: 12pt;
-    line-height: 1.3;
+    /* showing font and color */
+    .about-page * {
+        font-family: serif;
+        color: black;
+        font-size: 12pt;
+        line-height: 1.3;
+    }
 }
