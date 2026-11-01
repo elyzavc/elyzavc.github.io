@@ -151,3 +151,20 @@ background-repeat: no-repeat;
     padding-right: 10px;
     padding-left: 8px;
 }
+.name {
+    display: block;
+    padding-bottom: 10px;
+}
+.email {
+    display: block;
+    padding-bottom: 10px;
+}
+.message {
+    display: block;
+    padding-bottom: 10px;
+}
+fieldset.contact-method {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+    <title>Contact</title>
+    <!--
+        Name:Elyza Chhoeung
+        Date:11/1/2026
+        Course:IS_LT 7355
+        Description:Web Design and Development Project
+        -->
+    <!-- Insert Logo and Rest of Navigation
+         -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="media/logo.png" alt="Elyza's Site Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://elyzavc.github.io/Webdev/index.html">Home</a></li>
+                <li><a href="https://elyzavc.github.io/Webdev/about.html">About</a></li>
+                <li><a href="https://elyzavc.github.io/Webdev/projects.html">Projects</a></li>
+                <li><a href="https://elyzavc.github.io/Webdev/reflection.html">Philosophy</a></li>
+                <li><a href="https://elyzavc.github.io/Webdev/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1> Contact Me </h1>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <select id="title" name="title">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mx">Mx. </option>
+                    <option value="dr">Dr.</option>
+                </select>
+                <div class="name">
+                    <label for="name">Full Name:</label>
+                    <input type="name" name="name" id="name" placeholder="First and Last Name" />
+
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" />
+                </div>
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </div>
+                <br>
+                <fieldset class="contact-method">
+                    <legend>Contact Method:</legend>
+                    <input type="radio" name="Contact Method" id="business" value="Business" />
+                    <label for="business">Business</label>
+                    <input type="radio" name="Contact Method" id="collaboration" value="Collaboration" />
+                    <label for="collaboration">Collaboration</label>
+                    <input type="radio" name="Contact Method" id="more-info" value="More Information" />
+                    <label for="more-info">General Inquiry</label>
+                    <input type="radio" name="Contact Method" id="other" value="Other" />
+                    <label for="other">Other</label>
+                </fieldset>
+                <br>
+                <input type="submit" name="submit" id="submit" class="submit-button" />
+        </form>
+    </main>
+
+    <footer class=site-footer>
+        <h3>Elyza Chhoeung <br>
+            <img src="media/email.png" alt="Email Icon" class="email-icon">evc8bw@missouri.edu <br>
+            <img src="media/phone.png" alt="Phone Icon" class="phone-icon"> (573) 890-4295
+            <br> November 1st, 2026
+
+        </h3>
+
+    </footer>
+</body>
+
+</html>
