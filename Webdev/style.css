@@ -34,7 +34,7 @@ html {
     font-size: 30px;
 }
 
-#blockquote,
+blockquote,
 p {
     font-family: Roboto, sans-serif;
 }
@@ -77,7 +77,7 @@ ul {
     width: 300px;
     height: auto;
     border: 10px solid #eefbff;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .intro p {
@@ -167,4 +167,62 @@ fieldset.contact-method {
     display: block;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+div.setting {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+/* About Page Grid */
+.about-page main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "intro intro"
+        "education video"
+        "education resume";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Areas */
+.about-page .intro {
+    grid-area: intro;
+}
+
+.about-page main section {
+    grid-area: education;
+}
+
+.about-page .about-video {
+    grid-area: video;
+    width: 100%;
+    max-width: 500px;
+}
+
+.about-page .resume {
+    grid-area: resume;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+    .about-page main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "intro"
+            "education"
+            "video"
+            "resume";
+    }
+
+    .about-page .intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-page .headshot {
+        max-width: 100%;
+    }
 }
