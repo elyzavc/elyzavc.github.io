@@ -34,3 +34,49 @@ nav a:hover {
     color: #9db8e1;
     text-decoration: underline;
 }
+
+.mobile-menu {
+    display: none;
+}
+#menu-toggle {
+    display: none;
+}
+
+/* hide on desktop */
+.hamburger {
+    display: none;
+}
+
+/* shows menu when the checkbox is checked */
+#menu-toggle:checked ~ .mobile-menu {
+    display: block; 
+}
+
+/* stacks menu items vertically */
+.mobile-menu ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+}
