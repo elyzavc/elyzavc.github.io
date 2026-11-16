@@ -219,3 +219,42 @@ div.setting {
         text-align: center;
     }
 }
+
+.projects h2,
+.projects h3,
+.projects h4 {
+    color: #292929;
+    font-size: 17px;
+    font-family: Poppins, sans-serif;
+}
+
+/* project grid layout */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding: 30px;
+}
+
+.projects section {
+    padding: 20px;
+    background-color: #eefbff;
+    border-radius: 10px;
+}
+
+/* media sizing */
+img.boa,
+img.unesco,
+img.sf {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
