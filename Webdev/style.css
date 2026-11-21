@@ -37,6 +37,19 @@ html {
 blockquote,
 p {
     font-family: Roboto, sans-serif;
+    font-size: 17px
+}
+blockquote {
+    font-style: italic;
+    color: #292929;
+    font-size: 20px;
+    text-align: center;
+}
+blockquote {
+    border: 5px solid #292929;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eefbff;
 }
 
 div.resume {
@@ -320,3 +333,11 @@ tbody tr:hover{
 }
 
 
+button {
+    background-color: #eefbff;
+    color: #292929;
+    border: 2px solid #292929;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
