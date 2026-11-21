@@ -227,7 +227,26 @@ div.setting {
         padding: 8px;
     }
 }
+/* reflection page styling */
 
+.reflection-box {
+    background-color: #eefbff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    border: 2px solid #292929
+}
+.first-paragraph::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.indented-paragraph {
+    text-indent: 30px;
+}
+.first-paragraph {
+    text-indent: 30px;
+}
 .projects h2 {
     color: #292929;
     font-size: 17px;
