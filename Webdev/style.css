@@ -27,6 +27,9 @@ html {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
 
 }
 
@@ -34,24 +37,24 @@ html {
     font-size: 30px;
 }
 
-blockquote,
-p {
-    font-family: Roboto, sans-serif;
-    font-size: 17px
-}
 blockquote {
     font-style: italic;
     color: #292929;
     font-size: 20px;
     text-align: center;
-}
-blockquote {
     border: 5px solid #292929;
     border-radius: 10px;
     padding: 10px;
     background-color: #eefbff;
 }
 
+main {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
 div.resume {
     background-color: rgba(228, 226, 226, 0.685);
     width: fit-content;
